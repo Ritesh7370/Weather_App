@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Application</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
     <link rel="shortcut icon" href="./favicon.ico.png" type="png">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section class="intro-page">
-      <div>
-        <h1>Weather Api</h1>
-        <button id="fetchButton">Fetch Data</button>
-      </div>
-    </section>
-    <section class="weather-page">
-      <div class="location-map">
-        <div class="heading-location">
-          <h1>Welcome To The Weather Application</h1>
-          <p>Here is your current location</p>
-          <div class="location">
-            <div id="Latitude"></div>
-            <div id="Logitude"></div>
-          </div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+     <link rel="icon" href="./assets/a41d84a485d960a7d929fd95ece1acf1-weather-stroke-icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+      rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="heading"><h1>Weather Cities Project</h1></div>
+        <div id="form-container">
+            <div>
+                <form action="#" id="form">
+                    <input type="text" name="cityName" placeholder="Search for a city">
+                    <button id="add-btn">Add City</button>
+                </form>
+            </div>
         </div>
-        <div id="map">
-          <!-- js -->
-          <iframe id="mapFrame" src="" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+
+        <div id="city-weather-container">
+            
         </div>
-      </div>
-      <div class="weather-data-div">
-        <h1>Your Weather Data</h1>
-        <div class="weather-data">
-          <div id="location"></div>
-          <div id="windspeed"></div>
-          <div id="humidity"></div>
-          <div id="timeZone"></div>
-          <div id="pressure"></div>
-          <div id="windDirection"></div>
-          <div id="uvIndex"></div>
-          <div id="feelsLike"></div>
-        </div>
-      </div>
-    </section>
-    <script src="./script.js"></script>
-  </body>
+    </div>
+    
+    <script src="./weather.js"></script>
+</body>
 </html>
